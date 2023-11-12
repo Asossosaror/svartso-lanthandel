@@ -50,7 +50,15 @@
     }
 
     .navigation-manual {
-        position: absolute;
+        left: calc(50% - 96px)
+    }
+
+    .manual-btn {
+        @apply w-4 h-4 border-2 border-slate-300 rounded-full hover:bg-slate-300 transition-colors;
+    }
+
+    .manual-btn.checked {
+        @apply bg-slate-300;
     }
 }
 
