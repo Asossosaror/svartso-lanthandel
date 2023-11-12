@@ -22,6 +22,26 @@
         @apply px-6 py-2 mx-1 rounded-md font-semibold border-2 transition-colors;
     }
 
+    /* Hover effect navbar */
+    .navbar-links a:after {
+        content: "";
+        position: absolute;
+        background-color: black;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -5px;
+        transition: 0.3s;
+    }
+
+    a:hover:after {
+        width: 100%;
+    }
+
+    footer > div {
+        width: 1200px;
+    }
+
     #hero-img-1-home {
         height: 32rem;
         /* background-image: url(https://images.unsplash.com/photo-1549778399-f94fd24d4697?auto=format&fit=crop&q=80&w=2574&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
@@ -61,7 +81,3 @@
         @apply bg-slate-300;
     }
 }
-
-/* h1 {
-    @apply bg-slate-600;
-} */

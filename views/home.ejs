@@ -1,20 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %></title>
-
-    <link rel="stylesheet" href="CSS/output.css">
-    <script src="/JS/app.js" defer></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-</head>
-<body class="flex flex-col bg-slate-50">
-    <%- include('partials/navbar-main') %>
-    <main class="bg-slate-50">
+<%- include('partials/head') %>
+    <main>
         <section class="flex flex-col justify-center h-40r">
             <h1 class="text-7xl text-slate-950 text-center p-6 font-bold">This is Svartsö lanthandel</h1>
         </section>
@@ -73,5 +58,23 @@
             </div>
         </section>
     </main>
+    <footer class="pb-16">
+        <div class="flex flex-col items-center">
+            <div class="pb-8">
+                <a class="text-lg text-slate-700 hover:text-slate-800 transition-color pr-16" href="#">Startsida</a>
+                <a class="text-lg text-slate-700 hover:text-slate-800 transition-color pr-16" href="#">Startsida</a>
+                <a class="text-lg text-slate-700 hover:text-slate-800 transition-color pr-16" href="#">Startsida</a>
+                <a class="text-lg text-slate-700 hover:text-slate-800 transition-color pr-16" href="#">Startsida</a>
+                <a class="text-lg text-slate-700 hover:text-slate-800 transition-color" href="#">Startsida</a>
+            </div>
+            <div class="flex flex-row gap-8 pb-8">
+                <a target="_blank" href="https://www.facebook.com/SvartsoLanthandel/"><img class="h-16" src="/images/facebook-icon.png" alt="Facebookikon"></a>
+                <a target="_blank" href="https://www.instagram.com/svartsolanthandel/?hl=en"><img class="h-16" src="/images/instagram-icon-cut.png" alt="Instagramikon"></a>
+            </div>
+            <div>
+                <p class="text-lg text-slate-700">Svartsö Lanthandel</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
