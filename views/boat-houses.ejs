@@ -1,0 +1,65 @@
+<%- include('partials/head') %>
+<main>
+    <section class="flex flex-row">
+        <div class="basis-1/2 flex flex-col justify-center gap-10">
+            <h1 class="text-6xl text-slate-950 font-semibold leading-tight">Njut av en cykeltur på Svartsö</h1>
+            <div>
+                <button class="btn-blue">Boka</button>
+                <button class="btn-white">Läs mer &#10140;</button>
+            </div>
+        </div>
+        <div class="basis-1/2">
+            <div>
+                <img class="rounded-xl" src="/images/boat-houses.jpeg" alt="cyklar">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="flex justify-center">
+            <p class="text-xl text-center leading-loose max-w-2xl">Vi erbjuder ett charmigt boende i sjöbodar, direkt vid vattnet intill Alsviks brygga på Svartsö. Vi har fyra sjöbodar med enkel standard och sammanlagt åtta bäddar.</p>
+        </div>
+    </section>
+    <section class="flex flex-col items-center">
+        <h2 class="text-4xl mb-12 font-semibold">Priser</h2>
+        <div class="flex justify-center gap-12">
+            <div class="w-fit h-fit p-8 border-slate-200 border-2 rounded-lg">
+                <div class="w-64 h-24">
+                    <h3 class="text-2xl pb-2">Boende</h3>
+                    <p>850kr / sjöbod / dygn</p>
+                </div>
+            </div>
+            <div class="w-fit h-fit p-8 border-slate-200 border-2 rounded-lg">
+                <div class="w-64 h-24">
+                    <h3 class="text-2xl pb-2">Lakan & handdukar</h3>
+                    <p>150kr / person</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="flex flex-col items-center">
+        <h2 class="text-4xl text-center font-semibold pb-12">Skicka din bokningsförfrågan</h2>
+        <div class="flex justify-center gap-12">
+            <div class="w-fit h-fit p-8 border-slate-200 border-2 rounded-lg">
+                <div class="w-96">
+                    <p class="text-lg pb-4">Tel: 08-542 473 25</p>
+                    <p class="text-lg pb-4">Telefontid: Kl 10-18 under högsäsong</p>
+                    <p class="text-lg pb-4">E-post: <a href="mailto:info@svartsosjobodar.se">info@svartsosjobodar.se</a></p>
+                    <p class="text-lg "><a href="http://www.svartsosjobodar.se">www.svartsosjobodar.se</a></p>
+                </div>
+            </div>
+            <div class="w-fit h-fit p-8 border-slate-200 border-2 rounded-lg">
+                <div class="w-96">
+                    <form>
+                        <div>
+                            <input class="border-2 border-slate-100 focus:border-slate-200" type="text">
+                            <input class="border-2 border-slate-100 focus:border-slate-200" type="tel" name="" id="">
+                        </div>
+                        <input type="email">
+                        <input type="datetime" name="" id="">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<%- include('partials/footer') %>

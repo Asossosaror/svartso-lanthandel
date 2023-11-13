@@ -8,7 +8,7 @@
     } */
 
     main {
-        max-width: 1200px;
+        width: 1400px;
         padding-bottom: 200px;
         margin: 0 auto;
     }
@@ -18,8 +18,24 @@
         @apply px-7;
     }
 
+    input {
+        all: unset;
+    }
+
     button {
         @apply px-6 py-2 mx-1 rounded-md font-semibold border-2 transition-colors;
+    }
+
+    .btn-blue {
+        @apply bg-blue-600 border-blue-600 text-white hover:bg-blue-500 hover:border-blue-500;
+    }
+
+    .btn-white {
+        @apply border-white hover:border-slate-100 hover:bg-slate-100;
+    }
+
+    .btn-white-border {
+        @apply border-slate-200 hover:bg-slate-50;
     }
 
     /* Hover effect navbar */
@@ -40,6 +56,10 @@
 
     footer > div {
         width: 1200px;
+    }
+
+    footer a.nav-a-tag {
+        @apply text-lg text-slate-700 hover:text-slate-800 transition-colors;
     }
 
     #hero-img-1-home {
