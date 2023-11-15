@@ -29,6 +29,10 @@ app.get('/om-svartso', (req, res) => {
     res.render('about-us', { title: 'Om Svartsö - Svartsö Lanthandel AB' });
 });
 
+app.get('/kontakt', (req, res) => {
+    res.render('contact-us', { title: 'Kontakt - Svartsö Lanthandel AB' })
+})
+
 app.listen(3000, (req, res) => {
     console.log('Listening on port 3000.');
 })

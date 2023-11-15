@@ -38,6 +38,10 @@
         @apply border-slate-200 hover:bg-slate-50;
     }
 
+    p.semibold {
+        @apply text-lg font-semibold;
+    }
+
     /* Hover effect navbar */
     .navbar-links a:after {
         content: "";
@@ -99,5 +103,29 @@
 
     .manual-btn.checked {
         @apply bg-slate-300;
+    }
+
+    /* Form */
+    .form-input {
+        @apply block rounded-md border-0 py-1.5 pl-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-base sm:leading-6;
+        width: calc(100% - 1rem);
+    }
+
+    .form-textarea {
+        @apply block rounded-md border-0 py-1.5 pl-2 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-base sm:leading-6;
+        width: 100%;
+        resize: none;
+    }
+
+    .form-input-container {
+        @apply relative mt-2 rounded-md shadow-sm;
+    }
+
+    .form-label {
+        @apply block text-lg mt-4 font-semibold leading-6 text-gray-900;
+    }
+
+    .form-label:nth-of-type(1) {
+        @apply mt-0;
     }
 }
