@@ -1,3 +1,94 @@
 <%- include('partials/head') %>
-<main></main>
+<main>
+    <section class="flex flex-col justify-center h-30r">
+        <h1 class="text-7xl text-slate-950 text-center p-6 font-bold">Land i sikte!</h1>
+    </section>
+    <section>
+        <div>
+            <div id="hero-img-1-harbor" class="rounded-2xl"></div>
+        </div>
+    </section>
+    <section class="flex flex-col items-center">
+        <h2 class="text-5xl font-semibold text-center pb-10">Gästhamnen på Svartsö</h2>
+        <p class="max-w-5xl text-center text-xl font-semibold pb-8 leading-loose">Välkommen att lägga till vid vår nya gästhamn. Hamnen drivs av oss i Svartsö Lanthandel och ligger i anslutning till både butiken och vårt fina café.</p>
+    </section>
+    <section class="flex justify-center">
+        <div class="flex justify-center gap-12">
+            <div class="w-fit h-fit p-8 border-slate-200 border-2 rounded-lg">
+                <div class="w-64 h-28">
+                    <h3 class="text-3xl pb-2">Hamnplats</h3>
+                    <p class="text-lg">150kr / dag</p>
+                    <p class="text-lg">350kr / dygn</p>
+                </div>
+            </div>
+            <div class="w-fit h-fit p-8 border-slate-200 border-2 rounded-lg">
+                <div class="w-64 h-28">
+                    <h3 class="text-3xl pb-2">Elektricitet</h3>
+                    <p class="text-lg">80kr / dygn</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="flex flex-col items-center">
+        <h3 class="text-4xl font-semibold text-center pb-10">Faciliteter</h3>
+        <p class="text-xl leading-loose font-semibold text-center max-w-[80%]">I hamnen finns ett servicehus innehållandes toalett & dusch som alla hamngäster är välkomna att använda. Vill ni övernatta finns det möjlighet att boka våra sjöbodar som ligger i hamnen.</p>
+        <button class="btn-blue mt-10">Boka sjöbod</button>
+    </section>
+    <section class="flex flex-col items-center">
+        <h2 class="text-4xl text-center font-semibold pb-12">Skicka din bokningsförfrågan</h2>
+        <div class="flex justify-center gap-12">
+            <div class="w-fit h-auto p-8 border-slate-200 border-2 rounded-lg">
+                <div class="w-96">
+                    <p class="text-lg pb-5">Vill du komma i kontakt med oss eller har frågor om Gästhamnen går det bra att höra av sig till via email eller telefon.</p>
+                    <div class="pb-3">
+                        <p class="semibold">Tel: </p>
+                        <p class="text-lg">08-542 473 25</p>
+                    </div>
+                    <div class="pb-5">
+                        <p class="semibold">E-post: </p>
+                        <p class="text-lg"><a href="mailto:info@svartsosjobodar.se">info@svartsosjobodar.se</a></p>
+                    </div>
+                    <div class="pb-5">
+                        <p class="text-lg inline">Det går även bra att boka plats via </p>
+                        <p class="semibold inline"><a class="hover:underline" target="_blank" href="https://www.dockspot.com/en/docks/263-svartso-gasthamn">Dockspot.</a></p>
+                    </div>
+                    <div>
+                        <p class="text-lg inline">För fler bilder besök gärna vår </p>
+                        <p class="semibold inline"><a class="hover:underline" target="_blank" href="https://www.instagram.com/svartsogasthamn/">Instagram</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-fit h-fit p-8 border-slate-200 border-2 rounded-lg">
+                <div class="w-96">
+                    <!-- <form>
+                        <div>
+                            <input class="border-2 border-slate-100 focus:border-slate-200" type="text">
+                            <input class="border-2 border-slate-100 focus:border-slate-200" type="tel" name="" id="">
+                        </div>
+                        <input type="email">
+                        <input type="datetime" name="" id="">
+                    </form> -->
+                    <div>
+                        <label for="name-input" class="form-label">Namn</label>
+                        <div class="form-input-container">
+                          <input type="text" name="name-input" id="name-input" class="form-input" placeholder="ex. Anders Svensson">
+                        </div>
+                        <label for="phone-number-input" class="form-label">Telefonnummer</label>
+                        <div class="form-input-container">
+                          <input type="text" name="phone-number-input" id="phone-number-input" class="form-input" placeholder="ex. 070-123 45 67">
+                        </div>
+                        <label for="email-input" class="form-label">E-post</label>
+                        <div class="form-input-container">
+                          <input type="text" name="email-input" id="email-input" class="form-input" placeholder="ex. anders.svensson@example.com">
+                        </div>
+                        <label for="message-input" class="form-label">Meddelande</label>
+                        <div class="form-input-container">
+                            <textarea name="message-input" id="message-input" cols="30" rows="5" class="form-textarea" placeholder="Meddelande..."></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 <%- include('partials/footer') %>
