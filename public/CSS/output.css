@@ -485,6 +485,22 @@ button {
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
+.btn-dark-blue {
+  --tw-border-opacity: 1;
+  border-color: rgb(29 78 216 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.btn-dark-blue:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(37 99 235 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
 .btn-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -505,6 +521,13 @@ button {
 .btn-white-border:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
+.btn-sm {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 p.semibold {
@@ -547,6 +570,10 @@ footer a.nav-a-tag {
 footer a.nav-a-tag:hover {
   --tw-text-opacity: 1;
   color: rgb(30 41 59 / var(--tw-text-opacity));
+}
+
+#home-grant-list {
+  direction: rtl;
 }
 
 #hero-img-1-home {
@@ -866,16 +893,20 @@ footer a.nav-a-tag:hover {
   margin-right: 2.75rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
 .mt-10 {
   margin-top: 2.5rem;
 }
 
-.inline-block {
-  display: inline-block;
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .inline {
@@ -904,10 +935,6 @@ footer a.nav-a-tag:hover {
 
 .h-32 {
   height: 8rem;
-}
-
-.h-40r {
-  height: 40rem;
 }
 
 .h-auto {
@@ -950,14 +977,6 @@ footer a.nav-a-tag:hover {
 
 .max-w-5xl {
   max-width: 64rem;
-}
-
-.max-w-screen-lg {
-  max-width: 1024px;
-}
-
-.max-w-\[\] {
-  max-width: ;
 }
 
 .max-w-\[80\%\] {
@@ -1057,6 +1076,10 @@ footer a.nav-a-tag:hover {
   border-width: 2px;
 }
 
+.border-t-2 {
+  border-top-width: 2px;
+}
+
 .border-slate-100 {
   --tw-border-opacity: 1;
   border-color: rgb(241 245 249 / var(--tw-border-opacity));
@@ -1116,6 +1139,10 @@ footer a.nav-a-tag:hover {
   padding-bottom: 0.5rem;
 }
 
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -1144,12 +1171,12 @@ footer a.nav-a-tag:hover {
   padding-left: 1rem;
 }
 
-.pl-8 {
-  padding-left: 2rem;
-}
-
 .pr-16 {
   padding-right: 4rem;
+}
+
+.pr-8 {
+  padding-right: 2rem;
 }
 
 .pt-2 {
@@ -1160,8 +1187,16 @@ footer a.nav-a-tag:hover {
   padding-top: 6rem;
 }
 
-.pb-3 {
-  padding-bottom: 0.75rem;
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .text-center {
