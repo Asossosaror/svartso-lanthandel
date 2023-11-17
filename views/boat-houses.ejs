@@ -51,42 +51,36 @@
                 </div>
             </div>
             <div class="w-fit h-fit p-8 border-slate-200 border-2 rounded-lg">
-                <div class="w-96">
-                    <!-- <form>
+                <form action="/send-email" method="post" class="contact-form">
+                    <div class="w-96">
                         <div>
-                            <input class="border-2 border-slate-100 focus:border-slate-200" type="text">
-                            <input class="border-2 border-slate-100 focus:border-slate-200" type="tel" name="" id="">
+                            <label for="name-input" class="form-label">Namn</label>
+                            <div class="form-input-container">
+                              <input type="text" name="name" id="name-input" class="form-input" placeholder="ex. Anders Svensson">
+                            </div>
+                            <label for="phone-number-input" class="form-label">Telefonnummer</label>
+                            <div class="form-input-container">
+                              <input type="text" name="phoneNumber" id="phone-number-input" class="form-input" placeholder="ex. 070-123 45 67">
+                            </div>
+                            <label for="email-input" class="form-label">E-post</label>
+                            <div class="form-input-container">
+                              <input type="text" name="email" id="email-input" class="form-input" placeholder="ex. anders.svensson@example.com">
+                            </div>
+                            <label for="date-input" class="form-label">Datum</label>
+                            <div class="form-input-container">
+                              <input type="datetime" name="date" id="date-input" class="form-input" placeholder="ex. 01/01/2024">
+                            </div>
+                            <label for="message-input" class="form-label">Meddelande</label>
+                            <div class="form-input-container">
+                                <textarea name="message" id="message-input" cols="30" rows="5" class="form-textarea" placeholder="Meddelande..."></textarea>
+                            </div>
                         </div>
-                        <input type="email">
-                        <input type="datetime" name="" id="">
-                    </form> -->
-                    <div>
-                        <label for="name-input" class="form-label">Namn</label>
-                        <div class="form-input-container">
-                          <input type="text" name="name-input" id="name-input" class="form-input" placeholder="ex. Anders Svensson">
-                        </div>
-                        <label for="phone-number-input" class="form-label">Telefonnummer</label>
-                        <div class="form-input-container">
-                          <input type="text" name="phone-number-input" id="phone-number-input" class="form-input" placeholder="ex. 070-123 45 67">
-                        </div>
-                        <label for="email-input" class="form-label">E-post</label>
-                        <div class="form-input-container">
-                          <input type="text" name="email-input" id="email-input" class="form-input" placeholder="ex. anders.svensson@example.com">
-                        </div>
-                        <label for="date-input" class="form-label">Datum</label>
-                        <div class="form-input-container">
-                          <input type="datetime" name="date-input" id="date-input" class="form-input" placeholder="ex. 01/01/2024">
-                        </div>
-                        <label for="message-input" class="form-label">Meddelande</label>
-                        <div class="form-input-container">
-                            <textarea name="message-input" id="message-input" cols="30" rows="5" class="form-textarea" placeholder="Meddelande..."></textarea>
+                        <div class="pt-5 mt-6 border-t-2 border-slate-200 flex flex-row justify-end">
+                            <button class="btn-white btn-sm">Avbryt</button>
+                            <button class="btn-blue btn-sm">Skicka</button>
                         </div>
                     </div>
-                    <div class="pt-5 mt-6 border-t-2 border-slate-200 flex flex-row justify-end">
-                        <button class="btn-white btn-sm">Avbryt</button>
-                        <button class="btn-blue btn-sm">Skicka</button>
-                    </div>ler
-                </div>
+                </form>
             </div>
         </div>
     </section>

@@ -485,22 +485,6 @@ button {
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
-.btn-dark-blue {
-  --tw-border-opacity: 1;
-  border-color: rgb(29 78 216 / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.btn-dark-blue:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(37 99 235 / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
-}
-
 .btn-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -549,7 +533,11 @@ p.semibold {
   transition: 0.3s;
 }
 
-a:hover:after {
+.navbar-links a.a-underlined:after {
+  width: 100%;
+}
+
+.navbar-links a:hover:after {
   width: 100%;
 }
 
@@ -901,10 +889,6 @@ footer a.nav-a-tag:hover {
   margin-top: 1rem;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -1080,11 +1064,6 @@ footer a.nav-a-tag:hover {
   border-top-width: 2px;
 }
 
-.border-slate-100 {
-  --tw-border-opacity: 1;
-  border-color: rgb(241 245 249 / var(--tw-border-opacity));
-}
-
 .border-slate-200 {
   --tw-border-opacity: 1;
   border-color: rgb(226 232 240 / var(--tw-border-opacity));
@@ -1187,14 +1166,6 @@ footer a.nav-a-tag:hover {
   padding-top: 6rem;
 }
 
-.pt-6 {
-  padding-top: 1.5rem;
-}
-
-.pt-3 {
-  padding-top: 0.75rem;
-}
-
 .pt-5 {
   padding-top: 1.25rem;
 }
@@ -1280,9 +1251,4 @@ footer a.nav-a-tag:hover {
 
 .hover\:underline:hover {
   text-decoration-line: underline;
-}
-
-.focus\:border-slate-200:focus {
-  --tw-border-opacity: 1;
-  border-color: rgb(226 232 240 / var(--tw-border-opacity));
 }

@@ -62,7 +62,11 @@
         transition: 0.3s;
     }
 
-    a:hover:after {
+    .navbar-links a.a-underlined:after {
+        width: 100%;
+    }
+
+    .navbar-links a:hover:after {
         width: 100%;
     }
 

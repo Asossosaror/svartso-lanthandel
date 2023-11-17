@@ -20,34 +20,36 @@
             </div>
         </div>
         <div class="w-fit h-fit p-8 border-slate-200 border-2 rounded-lg">
-            <div class="w-96">
-                <div>
-                    <label for="name-input" class="form-label">Namn</label>
-                    <div class="form-input-container">
-                      <input type="text" name="name-input" id="name-input" class="form-input" placeholder="ex. Anders Svensson">
-                    </div>
-                    <label for="phone-number-input" class="form-label">Telefonnummer</label>
-                    <div class="form-input-container">
-                      <input type="text" name="phone-number-input" id="phone-number-input" class="form-input" placeholder="ex. 070-123 45 67">
-                    </div>
-                    <label for="email-input" class="form-label">E-post</label>
-                    <div class="form-input-container">
-                      <input type="text" name="email-input" id="email-input" class="form-input" placeholder="ex. anders.svensson@example.com">
-                    </div>
-                    <label for="message-input" class="form-label">Meddelande</label>
-                    <div class="form-input-container">
-                        <textarea name="message-input" id="message-input" cols="30" rows="5" class="form-textarea" placeholder="Meddelande..."></textarea>
+            <form action="/send-email" method="post" class="contact-form">
+                <div class="w-96">
+                    <div>
+                        <label for="name-input" class="form-label">Namn</label>
+                        <div class="form-input-container">
+                          <input type="text" name="name" id="name-input" class="form-input" placeholder="ex. Anders Svensson">
+                        </div>
+                        <label for="phone-number-input" class="form-label">Telefonnummer</label>
+                        <div class="form-input-container">
+                          <input type="text" name="phoneNumber" id="phone-number-input" class="form-input" placeholder="ex. 070-123 45 67">
+                        </div>
+                        <label for="email-input" class="form-label">E-post</label>
+                        <div class="form-input-container">
+                          <input type="text" name="email" id="email-input" class="form-input" placeholder="ex. anders.svensson@example.com">
+                        </div>
+                        <label for="message-input" class="form-label">Meddelande</label>
+                        <div class="form-input-container">
+                            <textarea name="message" id="message-input" cols="30" rows="5" class="form-textarea" placeholder="Meddelande..."></textarea>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="pt-5 mt-6 border-t-2 border-slate-200 flex flex-row justify-end">
-                <button class="btn-white btn-sm">Avbryt</button>
-                <button class="btn-blue btn-sm">Skicka</button>
-            </div>
+                <div class="pt-5 mt-6 border-t-2 border-slate-200 flex flex-row justify-end">
+                    <button class="btn-white btn-sm" type="button">Avbryt</button>
+                    <button class="btn-blue btn-sm" type="submit">Skicka</button>
+                </div>
+            </form>
         </div>
     </section>
     <section class="flex flex-row justify-center">
-        <div class="fb-page w-96" data-href="https://www.facebook.com/SvartsoLanthandel" data-tabs="timeline" data-width="500" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/SvartsoLanthandel" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/SvartsoLanthandel">Svartsö Lanthandel</a></blockquote></div>
+        <!-- <div class="fb-page w-96" data-href="https://www.facebook.com/SvartsoLanthandel" data-tabs="timeline" data-width="500" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/SvartsoLanthandel" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/SvartsoLanthandel">Svartsö Lanthandel</a></blockquote></div> -->
     </section>
 </main>
 <%- include('partials/footer') %>

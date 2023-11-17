@@ -3,11 +3,11 @@
         <a href="#" class="w-full h-full"><img class="h-32" src="/images/logo.png" alt="Loggan"></a>
     </div>
     <div class="navbar-links py-5">
-        <a class="relative px-1 text-black text-2xl mr-11" href="/">Startsida</a>
-        <a class="relative px-1 text-black text-2xl mr-11" href="/gasthamn">Gästhamn</a>
-        <a class="relative px-1 text-black text-2xl mr-11" href="/cykeluthyrning">Cykeluthyrning</a>
-        <a class="relative px-1 text-black text-2xl mr-11" href="/sjobodarna">Sjöbodarna</a>
-        <a class="relative px-1 text-black text-2xl mr-11" href="/om-svartso">Om Svartsö</a>
-        <a class="relative px-1 text-black text-2xl" href="/kontakt">Kontakta oss</a>
+        <a class="relative px-1 text-black text-2xl mr-11 <%= page == 'home' ? 'a-underlined' : '' %>" href="/">Startsida</a>
+        <a class="relative px-1 text-black text-2xl mr-11 <%= page == 'guest-harbor' ? 'a-underlined' : '' %>" href="/gasthamn">Gästhamn</a>
+        <a class="relative px-1 text-black text-2xl mr-11 <%= page == 'bike-rental' ? 'a-underlined' : '' %>" href="/cykeluthyrning">Cykeluthyrning</a>
+        <a class="relative px-1 text-black text-2xl mr-11 <%= page == 'boat-houses' ? 'a-underlined' : '' %>" href="/sjobodarna">Sjöbodarna</a>
+        <a class="relative px-1 text-black text-2xl mr-11 <%= page == 'about-us' ? 'a-underlined' : '' %>" href="/om-svartso">Om Svartsö</a>
+        <a class="relative px-1 text-black text-2xl <%= page == 'contact-us' ? 'a-underlined' : '' %>" href="/kontakt">Kontakta oss</a>
     </div>
 </nav>
