@@ -6,7 +6,7 @@ if(slider) {
 const slides = document.querySelector('.slides');
 const firstSlide = document.querySelector('.slide.first');
 const carouselButtons = document.querySelectorAll('.manual-btn');
-const numberOfSlides = 4;
+const numberOfSlides = 7;
 
 let newCarouselIndex = 2;
 let newCarouselButton = '';
@@ -31,7 +31,7 @@ carouselButtons.forEach(button => {
         currentCarouselIndex = newCarouselIndex.toString();
 
         // display the correct image based on the carousel index
-        offset = (currentCarouselIndex - 1) * - 20;
+        offset = (currentCarouselIndex - 1) * (-12.5);
         firstSlide.style.marginLeft = offset.toString() + '%';
 
         // reset the setInterval for the automatic navigation
@@ -60,7 +60,7 @@ function scrollCarousel() {
     currentCarouselIndex = newCarouselIndex.toString();
 
     // display the correct image based on the carousel index
-    offset = (currentCarouselIndex - 1) * - 20;
+    offset = (currentCarouselIndex - 1) * (-12.5);
     firstSlide.style.marginLeft = offset.toString() + '%';
 }
 
@@ -111,3 +111,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 })
 
+// Scroll into view
+function scrollIntoViewport(id) {
+    let element = document.getElementById(id);
+    element.scrollIntoView({ behavior: "smooth", block: "start" })
+}

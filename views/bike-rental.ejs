@@ -4,8 +4,8 @@
         <div class="basis-1/2 flex flex-col justify-center gap-10">
             <h1 class="text-6xl text-slate-950 font-semibold leading-tight">Njut av en cykeltur på Svartsö</h1>
             <div>
-                <button class="btn-blue">Boka</button>
-                <button class="btn-white">Läs mer &#10140;</button>
+                <button class="btn-blue" onclick="scrollIntoViewport('rent-bike-section')">Boka</button>
+                <button class="btn-white" onclick="scrollIntoViewport('island-description-section')">Läs mer &#10140;</button>
             </div>
         </div>
         <div class="basis-1/2">
@@ -14,12 +14,12 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="island-description-section">
         <div>
             <p class="text-xl text-center leading-loose">Vid Ahlsviks brygga väntar Svartsö Lanthandel med cykel och karta över ön. Cykla sedan längs öns 14 km långa, vackra grusvägar genom en levande skärgårdsbygd med öppna ängar och hagar, betande kor och får, orörda skogar och kristallklara sjöar. Här finns både badstrand och fina klipphällar. Köp med dig lunch i Svartsö Lanthandel, besök Svartsö Krog, Bistro Sågen eller cafet på bryggan. Vid Norra Svartsö ligger Svartsö Skärgårdhotell&vandrarhem.</p>
         </div>
     </section>
-    <section class="flex justify-center">
+    <section class="flex justify-center" id="rent-bike-section">
         <div class="flex justify-center gap-12">
             <div class="w-fit h-fit p-8 border-slate-200 border-2 rounded-lg">
                 <div class="w-64 h-28">

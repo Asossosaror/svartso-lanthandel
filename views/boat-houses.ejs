@@ -4,8 +4,8 @@
         <div class="basis-1/2 flex flex-col justify-center gap-10">
             <h1 class="text-6xl text-slate-950 font-semibold leading-tight">Bo i en mysig stuga precis vid vattnet</h1>
             <div>
-                <button class="btn-blue">Boka</button>
-                <button class="btn-white">Läs mer &#10140;</button>
+                <button class="btn-blue" onclick="scrollIntoViewport('book-boat-house-section')">Boka</button>
+                <button class="btn-white" onclick="scrollIntoViewport('boat-house-description-section')">Läs mer &#10140;</button>
             </div>
         </div>
         <div class="basis-1/2">
@@ -14,7 +14,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="boat-house-description-section">
         <div class="flex justify-center">
             <p class="text-xl text-center leading-loose max-w-2xl">Vi erbjuder ett charmigt boende i sjöbodar, direkt vid vattnet intill Alsviks brygga på Svartsö. Vi har fyra sjöbodar med enkel standard och sammanlagt åtta bäddar.</p>
         </div>
@@ -36,7 +36,7 @@
             </div>
         </div>
     </section>
-    <section class="flex flex-col items-center">
+    <section class="flex flex-col items-center" id="book-boat-house-section">
         <h2 class="text-4xl text-center font-semibold pb-12">Skicka din bokningsförfrågan</h2>
         <div class="flex justify-center gap-12">
             <div class="w-fit h-auto p-8 border-slate-200 border-2 rounded-lg">
@@ -45,8 +45,8 @@
                     <p class="text-lg pb-10">Våra sjöbodar är oerhört populära! För att vara säker på att det finns någon ledig är det viktigt att boka med god framförhållning.</p>
                     <p class="semibold pb-5">Tel: 08-542 473 25</p>
                     <p class="semibold pb-5">Telefontid: Kl 10-18 under högsäsong</p>
-                    <p class="semibold pb-5">E-post: <a href="mailto:info@svartsosjobodar.se">info@svartsosjobodar.se</a></p>
-                    <p class="semibold"><a href="http://www.svartsosjobodar.se">www.svartsosjobodar.se</a></p>
+                    <p class="semibold pb-5">E-post: <a class="hover:underline" href="mailto:info@svartsosjobodar.se">info@svartsosjobodar.se</a></p>
+                    <p class="semibold"><a class="hover:underline" href="http://www.svartsosjobodar.se">www.svartsosjobodar.se</a></p>
                     
                 </div>
             </div>
@@ -89,7 +89,7 @@
         <div class="flex flex-row justify-center gap-28">
             <div class="w-full flex flex-col items-end">
                 <p class="text-xl leading-loose font-semibold text-right pb-12">Svartsö är en av de större öarna i Stockholms mellanskärgård. Ön är cirka en mil lång och två kilometer bred och ligger i den norra delen av Värmdös skärgård. Här finns ett varierat landskap med gammal och ny bebyggelse, flera insjöar, orörd skogsmark och öppen jordbruksbygd.</p>
-                <a target="_blank" href="/om-svartso"><button class="btn-blue">Läs mer</button></a>
+                <a href="/om-svartso"><button class="btn-blue">Läs mer</button></a>
             </div>
             <div class="w-full">
                 <img class="rounded-xl" src="/images/svartso-nature.jpg" alt="Landsväg">
