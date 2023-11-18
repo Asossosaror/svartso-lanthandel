@@ -599,7 +599,7 @@ footer a.nav-a-tag:hover {
 }
 
 .navigation-manual {
-  left: calc(50% - 96px)
+  left: calc(50% - (24rem / 2))
 }
 
 .manual-btn {
