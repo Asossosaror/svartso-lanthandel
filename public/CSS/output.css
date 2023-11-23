@@ -439,9 +439,8 @@ video {
     } */
 
 main {
-  width: 1400px;
-  padding-bottom: 200px;
-  margin: 0 auto;
+  width: 100%;
+  padding-bottom: 100px;
 }
 
 section {
@@ -560,19 +559,15 @@ footer a.nav-a-tag:hover {
   color: rgb(30 41 59 / var(--tw-text-opacity));
 }
 
-#home-grant-list {
-  direction: rtl;
-}
-
 #hero-img-1-home {
-  height: 32rem;
+  height: 20rem;
   background-image: url('../images/hero-home.jpg');
   background-position: center;
   background-size: cover;
 }
 
 #hero-img-1-harbor {
-  height: 32rem;
+  height: 20rem;
   background-image: url('../images/hero-harbor.jpg');
   background-position: center;
   background-size: cover;
@@ -593,7 +588,7 @@ footer a.nav-a-tag:hover {
 
 .slide img {
   width: 892px;
-  height: 500px;
+  height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -742,6 +737,36 @@ footer a.nav-a-tag:hover {
 
 .form-label:nth-of-type(1) {
   margin-top: 0px;
+}
+
+@media (width >= 1024px) {
+  #home-grant-list {
+    direction: rtl;
+  }
+
+  #hero-img-1-home, #hero-img-1-harbor {
+    height: 24rem;
+  }
+
+  .slide img {
+    height: 400px;
+  }
+}
+
+@media (width >= 1440px) {
+  main {
+    width: 1400px;
+    padding-bottom: 200px;
+    margin: 0 auto;
+  }
+
+  #hero-img-1-home, #hero-img-1-harbor {
+    height: 32rem;
+  }
+
+  .slide img {
+    height: 500px;
+  }
 }
 
 *, ::before, ::after {
@@ -901,6 +926,10 @@ footer a.nav-a-tag:hover {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-16 {
   height: 4rem;
 }
@@ -953,6 +982,10 @@ footer a.nav-a-tag:hover {
 
 .max-w-2xl {
   max-width: 42rem;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
 }
 
 .max-w-5xl {
@@ -1134,24 +1167,12 @@ footer a.nav-a-tag:hover {
   padding-bottom: 2rem;
 }
 
-.pl-16 {
-  padding-left: 4rem;
-}
-
 .pl-2 {
   padding-left: 0.5rem;
 }
 
 .pl-4 {
   padding-left: 1rem;
-}
-
-.pr-16 {
-  padding-right: 4rem;
-}
-
-.pr-8 {
-  padding-right: 2rem;
 }
 
 .pt-2 {
@@ -1247,4 +1268,66 @@ footer a.nav-a-tag:hover {
 
 .hover\:underline:hover {
   text-decoration-line: underline;
+}
+
+@media (min-width: 640px) {
+  .sm\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:h-96 {
+    height: 24rem;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:pb-0 {
+    padding-bottom: 0px;
+  }
+
+  .lg\:pr-16 {
+    padding-right: 4rem;
+  }
+
+  .lg\:pr-8 {
+    padding-right: 2rem;
+  }
+
+  .lg\:text-right {
+    text-align: right;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:h-30r {
+    height: 30rem;
+  }
+
+  .xl\:p-6 {
+    padding: 1.5rem;
+  }
+
+  .xl\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .xl\:font-bold {
+    font-weight: 700;
+  }
 }

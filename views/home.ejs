@@ -1,7 +1,7 @@
 <%- include('partials/head') %>
     <main>
-        <section class="flex flex-col justify-center h-30r">
-            <h1 class="text-7xl text-slate-950 text-center p-6 font-bold">Välkommen till en riktig lanthandel!</h1>
+        <section class="flex flex-col justify-center lg:h-96 xl:h-30r">
+            <h1 class="text-4xl font-semibold sm:text-6xl xl:text-7xl text-slate-950 text-center xl:p-6 xl:font-bold">Välkommen till en riktig lanthandel!</h1>
         </section>
         <section>
             <div>
@@ -42,7 +42,7 @@
                         <img src="/images/cafe.jpg" alt="bild">
                     </div>
 
-                    <div class="navigation-manual absolute flex justify-center gap-7 self-end justify-self-center pb-6 w-96">
+                    <div class="hidden md:flex navigation-manual absolute justify-center gap-7 self-end justify-self-center pb-6 w-96">
                         <div class="manual-btn checked" data-carousel-index="1"></div>
                         <div class="manual-btn" data-carousel-index="2"></div>
                         <div class="manual-btn" data-carousel-index="3"></div>
@@ -55,17 +55,19 @@
                 </div>
             </div>
         </section>
-        <section class="flex flex-row">
-            <div class="w-full flex flex-col content-center pl-16">
-                <p class="text-xl text-right pb-4">Vi har fått stöd av <b class="font-semibold">Europeiska jordbruksfonden för landsbygdsutveckling</b> för:</p>
-                <ul id="home-grant-list" class="text-lg list-disc pr-8 text-right">
-                    <li class="pb-2 pl-2">Nytt kassasystem 2022</li>
-                    <li class="pb-2 pl-2">Nya kyldiskar och mejerifront 2018</li>
-                    <li class="pl-2">Nya kassadiskar 2016</li>
-                </ul>
-            </div>
-            <div class="w-full flex justify-center">
-                <img class="rounded-t-xl" src="/images/EU.jpg" alt="EU-certifikat">
+        <section class="flex justify-center">
+            <div class="flex flex-col lg:flex-row gap-12 max-w-4xl">
+                <div class="w-full flex flex-col content-center">
+                    <p class="text-xl lg:text-right pb-4">Vi har fått stöd av <b class="font-semibold">Europeiska jordbruksfonden för landsbygdsutveckling</b> för:</p>
+                    <ul id="home-grant-list" class="text-lg list-disc pl-4 lg:pr-8 lg:text-right">
+                        <li class="pb-2 pl-2">Nytt kassasystem 2022</li>
+                        <li class="pb-2 pl-2">Nya kyldiskar och mejerifront 2018</li>
+                        <li class="pl-2">Nya kassadiskar 2016</li>
+                    </ul>
+                </div>
+                <div class="w-full flex justify-center">
+                    <img class="rounded-t-xl" src="/images/EU.jpg" alt="EU-certifikat">
+                </div>
             </div>
         </section>
     </main>
