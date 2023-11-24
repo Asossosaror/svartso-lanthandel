@@ -669,6 +669,18 @@ section:has(#hero-img-1-home) {
   background-size: cover;
 }
 
+section:has(#hero-img-1-harbor) {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+@media (min-width: 640px) {
+  section:has(#hero-img-1-harbor) {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+}
+
 #hero-img-1-harbor {
   height: 20rem;
   background-image: url('../images/hero-harbor.jpg');
@@ -1002,10 +1014,6 @@ section:has(#hero-img-1-home) {
   position: relative;
 }
 
-.top-20 {
-  top: 5rem;
-}
-
 .top-28 {
   top: 7rem;
 }
@@ -1233,11 +1241,6 @@ section:has(#hero-img-1-home) {
 .border-slate-200 {
   --tw-border-opacity: 1;
   border-color: rgb(226 232 240 / var(--tw-border-opacity));
-}
-
-.bg-slate-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
 }
 
 .bg-white {

@@ -85,12 +85,15 @@
         transition: all .5s ease;
         margin: 1em;
     }
+
     .burger:hover {
         background: rgb(56 56 56);
     }
+
     .burger-strip {
         transition: all .5s ease;
     }
+
     .strip div {
         height: 3px;
         border-radius: 2px;
@@ -99,6 +102,7 @@
         transition: all .55s cubic-bezier(0.075, 0.82, 0.165, 1);
         width: 40px;
     }
+
     .burger:hover .strip div {
         background: white;
     }
@@ -106,15 +110,19 @@
     .burger-strip div:first-child {
         width: 16px;
     }
+
     .burger-strip div:last-child {
         width: 28px;
     }
+
     .burger:hover .burger-strip div:first-child {
         transform: rotate(45deg) translateY(1px) translateX(5px);
     }
+
     .burger:hover .burger-strip div:nth-child(2) {
         transform: rotate(-45deg);
     }
+
     .burger:hover .burger-strip div:last-child {
         transform: rotate(45deg) translateY(-13px) translateX(2px);
     }
@@ -156,6 +164,10 @@
         background-image: url('../images/hero-home.jpg');
         background-position: center;
         background-size: cover;
+    }
+
+    section:has(#hero-img-1-harbor) {
+        @apply px-0 sm:px-7;
     }
 
     #hero-img-1-harbor {
