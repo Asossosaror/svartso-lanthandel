@@ -438,6 +438,15 @@ video {
         font-family: 'Open sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     } */
 
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 main {
   width: 100%;
   padding-bottom: 100px;
@@ -519,6 +528,88 @@ p.semibold {
   font-weight: 600;
 }
 
+/* Navbar */
+
+.navbar-links {
+  width: calc(100% - 3rem);
+}
+
+.navbar-links > a {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .navbar-links > a {
+    position: relative;
+  }
+}
+
+/* Burger icon */
+
+.burger {
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: rgb(136 165 191 / 48%) 6px 2px 16px 0px, rgb(255 255 255 / 80%) -6px -2px 16px 0px;
+  cursor: pointer;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  transition: all .5s ease;
+  margin: 1em;
+}
+
+.burger:hover {
+  background: rgb(56 56 56);
+}
+
+.burger-strip {
+  transition: all .5s ease;
+}
+
+.strip div {
+  height: 3px;
+  border-radius: 2px;
+  background: rgb(56 56 56);
+  margin: 10px;
+  transition: all .55s cubic-bezier(0.075, 0.82, 0.165, 1);
+  width: 40px;
+}
+
+.burger:hover .strip div {
+  background: white;
+}
+
+.burger-strip div:first-child {
+  width: 16px;
+}
+
+.burger-strip div:last-child {
+  width: 28px;
+}
+
+.burger:hover .burger-strip div:first-child {
+  transform: rotate(45deg) translateY(1px) translateX(5px);
+}
+
+.burger:hover .burger-strip div:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+.burger:hover .burger-strip div:last-child {
+  transform: rotate(45deg) translateY(-13px) translateX(2px);
+}
+
 /* Hover effect navbar */
 
 .navbar-links a:after {
@@ -559,6 +650,18 @@ footer a.nav-a-tag:hover {
   color: rgb(30 41 59 / var(--tw-text-opacity));
 }
 
+section:has(#hero-img-1-home) {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+@media (min-width: 640px) {
+  section:has(#hero-img-1-home) {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+}
+
 #hero-img-1-home {
   height: 20rem;
   background-image: url('../images/hero-home.jpg');
@@ -573,8 +676,20 @@ footer a.nav-a-tag:hover {
   background-size: cover;
 }
 
+#slider-section-home {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+@media (min-width: 640px) {
+  #slider-section-home {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+}
+
 .slider {
-  width: 892px;
+  width: 100%;
 }
 
 .slides {
@@ -739,6 +854,12 @@ footer a.nav-a-tag:hover {
   margin-top: 0px;
 }
 
+@media (width >= 640px) {
+  .slider {
+    width: 892px;
+  }
+}
+
 @media (width >= 1024px) {
   #home-grant-list {
     direction: rtl;
@@ -869,12 +990,24 @@ footer a.nav-a-tag:hover {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
 
 .relative {
   position: relative;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
+.top-28 {
+  top: 7rem;
 }
 
 .my-4 {
@@ -1048,6 +1181,10 @@ footer a.nav-a-tag:hover {
   gap: 7rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .gap-40 {
   gap: 10rem;
 }
@@ -1096,6 +1233,11 @@ footer a.nav-a-tag:hover {
 .border-slate-200 {
   --tw-border-opacity: 1;
   border-color: rgb(226 232 240 / var(--tw-border-opacity));
+}
+
+.bg-slate-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -1271,6 +1413,14 @@ footer a.nav-a-tag:hover {
 }
 
 @media (min-width: 640px) {
+  .sm\:rounded-2xl {
+    border-radius: 1rem;
+  }
+
+  .sm\:rounded-xl {
+    border-radius: 0.75rem;
+  }
+
   .sm\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
@@ -1286,6 +1436,10 @@ footer a.nav-a-tag:hover {
 @media (min-width: 1024px) {
   .lg\:block {
     display: block;
+  }
+
+  .lg\:hidden {
+    display: none;
   }
 
   .lg\:h-96 {
@@ -1314,6 +1468,10 @@ footer a.nav-a-tag:hover {
 }
 
 @media (min-width: 1280px) {
+  .xl\:block {
+    display: block;
+  }
+
   .xl\:h-30r {
     height: 30rem;
   }

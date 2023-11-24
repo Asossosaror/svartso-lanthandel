@@ -7,6 +7,15 @@
         font-family: 'Open sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     } */
 
+    html {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
     main {
         width: 100%;
         padding-bottom: 100px;
@@ -49,6 +58,67 @@
         @apply text-lg font-semibold;
     }
 
+    /* Navbar */
+    .navbar-links {
+        width: calc(100% - 3rem);
+    }
+
+    .navbar-links > a {
+        @apply sm:relative px-1 text-black text-2xl;
+    }
+
+    /* Burger icon */
+    .burger {
+        width: 55px;
+        height: 55px;
+        border-radius: 10px;
+        background: white;
+        box-shadow: rgb(136 165 191 / 48%) 6px 2px 16px 0px, rgb(255 255 255 / 80%) -6px -2px 16px 0px;
+        cursor: pointer;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        transition: all .5s ease;
+        margin: 1em;
+    }
+    .burger:hover {
+        background: rgb(56 56 56);
+    }
+    .burger-strip {
+        transition: all .5s ease;
+    }
+    .strip div {
+        height: 3px;
+        border-radius: 2px;
+        background: rgb(56 56 56);
+        margin: 10px;
+        transition: all .55s cubic-bezier(0.075, 0.82, 0.165, 1);
+        width: 40px;
+    }
+    .burger:hover .strip div {
+        background: white;
+    }
+
+    .burger-strip div:first-child {
+        width: 16px;
+    }
+    .burger-strip div:last-child {
+        width: 28px;
+    }
+    .burger:hover .burger-strip div:first-child {
+        transform: rotate(45deg) translateY(1px) translateX(5px);
+    }
+    .burger:hover .burger-strip div:nth-child(2) {
+        transform: rotate(-45deg);
+    }
+    .burger:hover .burger-strip div:last-child {
+        transform: rotate(45deg) translateY(-13px) translateX(2px);
+    }
+
     /* Hover effect navbar */
     .navbar-links a:after {
         content: "";
@@ -76,6 +146,10 @@
     footer a.nav-a-tag {
         @apply text-lg text-slate-700 hover:text-slate-800 transition-colors;
     }
+
+    section:has(#hero-img-1-home) {
+        @apply px-0 sm:px-7;
+    }
     
     #hero-img-1-home {
         height: 20rem;
@@ -91,8 +165,12 @@
         background-size: cover;
     }
 
+    #slider-section-home {
+        @apply px-0 sm:px-7;
+    }
+
     .slider {
-        width: 892px;
+        width: 100%;
     }
 
     .slides {
@@ -144,6 +222,12 @@
 
     .form-label:nth-of-type(1) {
         @apply mt-0;
+    }
+
+    @media (width >= 640px) {
+        .slider {
+            width: 892px;
+        }
     }
 
     @media (width >= 1024px) {
