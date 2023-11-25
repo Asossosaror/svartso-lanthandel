@@ -1070,6 +1070,14 @@ footer a.nav-a-tag:hover {
   z-index: 10;
 }
 
+.order-2 {
+  order: 2;
+}
+
+.order-1 {
+  order: 1;
+}
+
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -1321,6 +1329,11 @@ footer a.nav-a-tag:hover {
   padding-bottom: 1.5rem;
 }
 
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1375,6 +1388,10 @@ footer a.nav-a-tag:hover {
 
 .pt-5 {
   padding-top: 1.25rem;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
 }
 
 .text-center {
@@ -1555,6 +1572,14 @@ footer a.nav-a-tag:hover {
 }
 
 @media (min-width: 1024px) {
+  .lg\:order-1 {
+    order: 1;
+  }
+
+  .lg\:order-2 {
+    order: 2;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -1581,6 +1606,10 @@ footer a.nav-a-tag:hover {
 
   .lg\:gap-12 {
     gap: 3rem;
+  }
+
+  .lg\:gap-40 {
+    gap: 10rem;
   }
 
   .lg\:pb-0 {
