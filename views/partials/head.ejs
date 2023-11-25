@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= title %></title>
 
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+
     <link rel="stylesheet" href="CSS/output.css">
     <script src="/JS/app.js" defer></script>
 
@@ -14,5 +16,6 @@
 </head>
 <body class="flex flex-col items-center bg-white">
     <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0" nonce="jAahoNz0"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0" nonce="jAahoNz0"></script>
+    <div class="overlay"></div>
     <%- include('navbar-main') %>

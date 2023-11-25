@@ -610,6 +610,34 @@ p.semibold {
   transform: rotate(45deg) translateY(-13px) translateX(2px);
 }
 
+/* Burger functionality */
+
+.navbar-links {
+  transform: translateX(100%);
+  transition: transform 250ms ease-out;
+}
+
+.navbar-links.active {
+  transform: translateX(0);
+}
+
+/* Overlay */
+
+.overlay {
+  z-index: 2;
+  opacity: 0;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: opacity 250ms ease;
+}
+
+.overlay.show {
+  opacity: 0.4;
+}
+
 /* Hover effect navbar */
 
 .navbar-links a:after {
@@ -900,6 +928,10 @@ section:has(#hero-img-1-harbor) {
   .slide img {
     height: 500px;
   }
+
+  .navbar-links {
+    transform: translateX(0);
+  }
 }
 
 *, ::before, ::after {
@@ -1016,6 +1048,10 @@ section:has(#hero-img-1-harbor) {
 
 .top-28 {
   top: 7rem;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .my-4 {
@@ -1213,10 +1249,6 @@ section:has(#hero-img-1-harbor) {
   overflow: hidden;
 }
 
-.rounded-2xl {
-  border-radius: 1rem;
-}
-
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -1241,6 +1273,11 @@ section:has(#hero-img-1-harbor) {
 .border-slate-200 {
   --tw-border-opacity: 1;
   border-color: rgb(226 232 240 / var(--tw-border-opacity));
+}
+
+.bg-slate-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -1441,10 +1478,6 @@ section:has(#hero-img-1-harbor) {
     display: block;
   }
 
-  .lg\:hidden {
-    display: none;
-  }
-
   .lg\:h-96 {
     height: 24rem;
   }
@@ -1471,16 +1504,61 @@ section:has(#hero-img-1-harbor) {
 }
 
 @media (min-width: 1280px) {
+  .xl\:static {
+    position: static;
+  }
+
+  .xl\:top-auto {
+    top: auto;
+  }
+
   .xl\:block {
     display: block;
+  }
+
+  .xl\:flex {
+    display: flex;
+  }
+
+  .xl\:hidden {
+    display: none;
   }
 
   .xl\:h-30r {
     height: 30rem;
   }
 
+  .xl\:h-auto {
+    height: auto;
+  }
+
+  .xl\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .xl\:self-auto {
+    align-self: auto;
+  }
+
+  .xl\:self-center {
+    align-self: center;
+  }
+
+  .xl\:justify-self-center {
+    justify-self: center;
+  }
+
+  .xl\:bg-transparent {
+    background-color: transparent;
+  }
+
   .xl\:p-6 {
     padding: 1.5rem;
+  }
+
+  .xl\:pl-0 {
+    padding-left: 0px;
   }
 
   .xl\:text-7xl {

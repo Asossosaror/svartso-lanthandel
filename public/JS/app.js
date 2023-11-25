@@ -116,3 +116,11 @@ function scrollIntoViewport(id) {
     let element = document.getElementById(id);
     element.scrollIntoView({ behavior: "smooth", block: "start" })
 }
+
+// Make navbar appear
+function toggleNavbar() {
+    const navbar = document.querySelector('.navbar-links');
+    const overlay = document.querySelector('.overlay');
+    navbar.classList.toggle('active');
+    overlay.classList.toggle('show');
+}

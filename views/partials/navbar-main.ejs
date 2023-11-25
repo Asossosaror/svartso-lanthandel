@@ -2,8 +2,8 @@
     <div class="my-4">
         <a href="#" class="w-full h-full"><img class="h-32" src="/images/logo.png" alt="Loggan"></a>
     </div>
-    <div class="lg:hidden">
-        <div class="burger">
+    <div class="xl:hidden z-10">
+        <div class="burger" onclick="toggleNavbar()">
             <div class="strip burger-strip">
                 <div></div>
                 <div></div>
@@ -11,7 +11,7 @@
             </div>
         </div>
     </div>
-    <div class="navbar-links fixed h-full top-28 pl-4 rounded-lg self-end flex flex-col gap-4 xl:block py-5">
+    <div class="navbar-links z-10 fixed xl:static h-full xl:h-auto top-28 xl:top-auto pl-4 xl:pl-0 bg-slate-50 xl:bg-transparent rounded-lg self-end xl:self-center xl:w-fit flex flex-col gap-4 xl:block py-5">
         <a class="mr-11 <%= page == 'home' ? 'a-underlined' : '' %>" href="/">Startsida</a>
         <a class="mr-11 <%= page == 'guest-harbor' ? 'a-underlined' : '' %>" href="/gasthamn">Gästhamn</a>
         <a class="mr-11 <%= page == 'bike-rental' ? 'a-underlined' : '' %>" href="/cykeluthyrning">Cykeluthyrning</a>

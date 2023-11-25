@@ -127,6 +127,32 @@
         transform: rotate(45deg) translateY(-13px) translateX(2px);
     }
 
+    /* Burger functionality */
+    .navbar-links {
+        transform: translateX(100%);
+        transition: transform 250ms ease-out;
+    }
+
+    .navbar-links.active {
+        transform: translateX(0);
+    }
+
+    /* Overlay */
+    .overlay {
+        z-index: 2;
+        opacity: 0;
+        background-color: rgb(0, 0, 0);
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        transition: opacity 250ms ease;
+    }
+
+    .overlay.show {
+        opacity: 0.4;
+    }
+
     /* Hover effect navbar */
     .navbar-links a:after {
         content: "";
@@ -269,6 +295,10 @@
 
         .slide img {
             height: 500px;
+        }
+
+        .navbar-links {
+            transform: translateX(0);
         }
     }
 }
