@@ -731,6 +731,18 @@ section:has(#hero-img-1-harbor) {
   background-size: cover;
 }
 
+section:has(#bikes-hero-img) {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+@media (min-width: 640px) {
+  section:has(#bikes-hero-img) {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+}
+
 #slider-section-home {
   padding-left: 0px;
   padding-right: 0px;
@@ -1265,6 +1277,10 @@ section:has(#hero-img-1-harbor) {
   gap: 1.75rem;
 }
 
+.gap-8 {
+  gap: 2rem;
+}
+
 .self-end {
   align-self: flex-end;
 }
@@ -1467,6 +1483,20 @@ section:has(#hero-img-1-harbor) {
   color: rgb(2 6 23 / var(--tw-text-opacity));
 }
 
+@media (min-width: 1280px) {
+  .xl\:btn-white {
+    --tw-border-opacity: 1;
+    border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  }
+
+  .xl\:btn-white:hover {
+    --tw-border-opacity: 1;
+    border-color: rgb(241 245 249 / var(--tw-border-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+  }
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
@@ -1505,6 +1535,11 @@ section:has(#hero-img-1-harbor) {
     padding: 2rem;
   }
 
+  .sm\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .sm\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
@@ -1519,6 +1554,14 @@ section:has(#hero-img-1-harbor) {
   .md\:flex-row {
     flex-direction: row;
   }
+
+  .md\:justify-center {
+    justify-content: center;
+  }
+
+  .md\:gap-12 {
+    gap: 3rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1528,6 +1571,10 @@ section:has(#hero-img-1-harbor) {
 
   .lg\:h-96 {
     height: 24rem;
+  }
+
+  .lg\:basis-1\/2 {
+    flex-basis: 50%;
   }
 
   .lg\:flex-row {
@@ -1556,6 +1603,11 @@ section:has(#hero-img-1-harbor) {
 
   .lg\:text-right {
     text-align: right;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
@@ -1589,8 +1641,28 @@ section:has(#hero-img-1-harbor) {
     width: fit-content;
   }
 
+  .xl\:basis-1\/2 {
+    flex-basis: 50%;
+  }
+
+  .xl\:flex-row {
+    flex-direction: row;
+  }
+
+  .xl\:justify-center {
+    justify-content: center;
+  }
+
+  .xl\:gap-12 {
+    gap: 3rem;
+  }
+
   .xl\:self-center {
     align-self: center;
+  }
+
+  .xl\:rounded-xl {
+    border-radius: 0.75rem;
   }
 
   .xl\:bg-transparent {
@@ -1603,6 +1675,11 @@ section:has(#hero-img-1-harbor) {
 
   .xl\:pl-0 {
     padding-left: 0px;
+  }
+
+  .xl\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
   .xl\:text-7xl {

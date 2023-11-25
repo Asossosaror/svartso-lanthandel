@@ -205,6 +205,10 @@
         background-size: cover;
     }
 
+    section:has(#bikes-hero-img) {
+        @apply px-0 sm:px-7;
+    }
+
     #slider-section-home {
         @apply px-0 sm:px-7;
     }
