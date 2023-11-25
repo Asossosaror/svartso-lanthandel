@@ -3,49 +3,51 @@
     <section>
         <h1 class="text-5xl font-semibold text-center">Hör av dig till oss!</h1>
     </section>
-    <section class="flex flex-row justify-center gap-24">
-        <div class="w-fit h-auto p-8 border-slate-200 border-2 rounded-lg">
-            <div class="w-96">
-                <h2 class="text-2xl font-semibold mb-4">Tveka inte att kontakta oss!</h2>
-                <!-- <p>Tveka inte att kontakta oss!</p> -->
-                <p class="text-lg">Ring, mejla eller besök oss på:</p>
-                <ul class="pl-4 pt-2">
-                    <li class="text-lg">Svartsö Lanthandel AB</li>
-                    <li class="text-lg">Alsviks Brygga</li>
-                    <li class="text-lg">13034 SKÄLVIK</li>
-                </ul>
-                <h3 class="text-xl font-semibold mt-4 mb-2">Koordinater</h3>
-                <p class="text-lg">N 59°26′13.36"</p>
-                <p class="text-lg">E 18°39′29.58"</p>
+    <section class="flex flex-col items-center">
+        <div class="flex flex-col w-full sm:w-auto lg:flex-row lg:justify-center gap-16 lg:gap-20 xl:gap-24">
+            <div class="w-full h-auto sm:p-8 sm:border-slate-200 sm:border-2 sm:rounded-lg">
+                <div class="w-full sm:w-96">
+                    <h2 class="text-2xl font-semibold mb-4">Tveka inte att kontakta oss!</h2>
+                    <!-- <p>Tveka inte att kontakta oss!</p> -->
+                    <p class="text-lg">Ring, mejla eller besök oss på:</p>
+                    <ul class="pl-4 pt-2">
+                        <li class="text-lg">Svartsö Lanthandel AB</li>
+                        <li class="text-lg">Alsviks Brygga</li>
+                        <li class="text-lg">13034 SKÄLVIK</li>
+                    </ul>
+                    <h3 class="text-xl font-semibold mt-4 mb-2">Koordinater</h3>
+                    <p class="text-lg">N 59°26′13.36"</p>
+                    <p class="text-lg">E 18°39′29.58"</p>
+                </div>
             </div>
-        </div>
-        <div class="w-fit h-fit p-8 border-slate-200 border-2 rounded-lg">
-            <form action="/send-email" method="post" class="contact-form">
-                <div class="w-96">
-                    <div>
-                        <label for="name-input" class="form-label">Namn</label>
-                        <div class="form-input-container">
-                          <input type="text" name="name" id="name-input" class="form-input" placeholder="ex. Anders Svensson">
-                        </div>
-                        <label for="phone-number-input" class="form-label">Telefonnummer</label>
-                        <div class="form-input-container">
-                          <input type="text" name="phoneNumber" id="phone-number-input" class="form-input" placeholder="ex. 070-123 45 67">
-                        </div>
-                        <label for="email-input" class="form-label">E-post</label>
-                        <div class="form-input-container">
-                          <input type="text" name="email" id="email-input" class="form-input" placeholder="ex. anders.svensson@example.com">
-                        </div>
-                        <label for="message-input" class="form-label">Meddelande</label>
-                        <div class="form-input-container">
-                            <textarea name="message" id="message-input" cols="30" rows="5" class="form-textarea" placeholder="Meddelande..."></textarea>
+            <div class="w-full h-auto sm:p-8 sm:border-slate-200 sm:border-2 sm:rounded-lg">
+                <form action="/send-email" method="post" class="contact-form">
+                    <div class="w-full sm:w-96">
+                        <div>
+                            <label for="name-input" class="form-label">Namn</label>
+                            <div class="form-input-container">
+                              <input type="text" name="name" id="name-input" class="form-input" placeholder="ex. Anders Svensson">
+                            </div>
+                            <label for="phone-number-input" class="form-label">Telefonnummer</label>
+                            <div class="form-input-container">
+                              <input type="text" name="phoneNumber" id="phone-number-input" class="form-input" placeholder="ex. 070-123 45 67">
+                            </div>
+                            <label for="email-input" class="form-label">E-post</label>
+                            <div class="form-input-container">
+                              <input type="text" name="email" id="email-input" class="form-input" placeholder="ex. anders.svensson@example.com">
+                            </div>
+                            <label for="message-input" class="form-label">Meddelande</label>
+                            <div class="form-input-container">
+                                <textarea name="message" id="message-input" cols="30" rows="5" class="form-textarea" placeholder="Meddelande..."></textarea>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="pt-5 mt-6 border-t-2 border-slate-200 flex flex-row justify-end">
-                    <button class="btn-white btn-sm" type="button">Avbryt</button>
-                    <button class="btn-blue btn-sm" type="submit">Skicka</button>
-                </div>
-            </form>
+                    <div class="pt-5 mt-6 border-t-2 border-slate-200 flex flex-row justify-end">
+                        <button class="btn-white btn-sm" type="button">Avbryt</button>
+                        <button class="btn-blue btn-sm" type="submit">Skicka</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
     <section class="flex flex-row justify-center">
