@@ -1,16 +1,16 @@
 <%- include('partials/head') %>
 <main>
-    <section class="flex flex-row">
-        <div class="basis-1/2 flex flex-col justify-center gap-10">
-            <h1 class="text-6xl text-slate-950 font-semibold leading-tight">Bo i en mysig stuga precis vid vattnet</h1>
+    <section class="hero-section flex flex-col gap-10 lg:flex-row">
+        <div class="basis-1/2 flex flex-col items-center lg:items-baseline justify-center gap-10 px-10 sm:px-0">
+            <h1 class="text-4xl xl:text-6xl text-slate-950 font-semibold leading-tight">Bo i en mysig stuga precis vid vattnet</h1>
             <div>
                 <button class="btn-blue" onclick="scrollIntoViewport('book-boat-house-section')">Boka</button>
-                <button class="btn-white" onclick="scrollIntoViewport('boat-house-description-section')">Läs mer &#10140;</button>
+                <button class="lg:btn-white" onclick="scrollIntoViewport('boat-house-description-section')">Läs mer &#10140;</button>
             </div>
         </div>
-        <div class="basis-1/2">
-            <div>
-                <img class="rounded-xl" src="/images/boat-houses.jpeg" alt="cyklar">
+        <div class="w-full basis-1/2">
+            <div class="flex justify-center">
+                <img class="sm:rounded-xl" src="/images/boat-houses.jpeg" alt="cyklar">
             </div>
         </div>
     </section>
@@ -21,38 +21,37 @@
     </section>
     <section class="flex flex-col items-center">
         <h2 class="text-4xl mb-12 font-semibold">Priser</h2>
-        <div class="flex justify-center gap-12">
+        <div class="flex flex-col gap-10 md:flex-row justify-center md:gap-12">
             <div class="w-fit h-fit p-8 border-slate-200 border-2 rounded-lg">
                 <div class="w-64 h-24">
                     <h3 class="text-2xl pb-2">Boende</h3>
-                    <p>850kr / sjöbod / dygn</p>
+                    <p class="text-lg">850kr / sjöbod / dygn</p>
                 </div>
             </div>
             <div class="w-fit h-fit p-8 border-slate-200 border-2 rounded-lg">
                 <div class="w-64 h-24">
                     <h3 class="text-2xl pb-2">Lakan & handdukar</h3>
-                    <p>150kr / person</p>
+                    <p class="text-lg">150kr / person</p>
                 </div>
             </div>
         </div>
     </section>
     <section class="flex flex-col items-center" id="book-boat-house-section">
         <h2 class="text-4xl text-center font-semibold pb-12">Skicka din bokningsförfrågan</h2>
-        <div class="flex justify-center gap-12">
-            <div class="w-fit h-auto p-8 border-slate-200 border-2 rounded-lg">
-                <div class="w-96">
+        <div class="flex flex-col sm:w-auto lg:flex-row lg:justify-center gap-16 lg:gap-12">
+            <div class="w-full h-auto sm:p-8 sm:border-slate-200 sm:border-2 sm:rounded-lg">
+                <div class="w-full sm:w-96">
                     <h3 class="text-2xl font-semibold pb-5">Boka i god tid!</h3>
                     <p class="text-lg pb-10">Våra sjöbodar är oerhört populära! För att vara säker på att det finns någon ledig är det viktigt att boka med god framförhållning.</p>
                     <p class="semibold pb-5">Tel: 08-542 473 25</p>
                     <p class="semibold pb-5">Telefontid: Kl 10-18 under högsäsong</p>
                     <p class="semibold pb-5">E-post: <a class="hover:underline" href="mailto:info@svartsosjobodar.se">info@svartsosjobodar.se</a></p>
                     <p class="semibold"><a class="hover:underline" href="http://www.svartsosjobodar.se">www.svartsosjobodar.se</a></p>
-                    
                 </div>
             </div>
-            <div class="w-fit h-fit p-8 border-slate-200 border-2 rounded-lg">
+            <div class="w-full h-auto sm:p-8 sm:border-slate-200 sm:border-2 sm:rounded-lg">
                 <form action="/send-email" method="post" class="contact-form">
-                    <div class="w-96">
+                    <div class="w-full sm:w-96">
                         <div>
                             <label for="name-input" class="form-label">Namn</label>
                             <div class="form-input-container">
@@ -84,15 +83,15 @@
             </div>
         </div>
     </section>
-    <section class="flex flex-col items-center">
+    <section class="flex flex-col items-center hero-section">
         <h2 class="text-4xl font-semibold text-center mb-14">Intro till Svartsö</h2>
-        <div class="flex flex-row justify-center gap-28">
-            <div class="w-full flex flex-col items-end">
-                <p class="text-xl leading-loose font-semibold text-right pb-12">Svartsö är en av de större öarna i Stockholms mellanskärgård. Ön är cirka en mil lång och två kilometer bred och ligger i den norra delen av Värmdös skärgård. Här finns ett varierat landskap med gammal och ny bebyggelse, flera insjöar, orörd skogsmark och öppen jordbruksbygd.</p>
+        <div class="flex flex-col md:flex-row md:justify-center gap-16 xl:gap-24">
+            <div class="w-full flex flex-col items-center md:items-end px-10 md:px-10">
+                <p class="text-xl leading-loose font-semibold text-center md:text-right pb-12">Svartsö är en av de större öarna i Stockholms mellanskärgård. Ön är cirka en mil lång och två kilometer bred och ligger i den norra delen av Värmdös skärgård. Här finns ett varierat landskap med gammal och ny bebyggelse, flera insjöar, orörd skogsmark och öppen jordbruksbygd.</p>
                 <a href="/om-svartso"><button class="btn-blue">Läs mer</button></a>
             </div>
             <div class="w-full">
-                <img class="rounded-xl" src="/images/svartso-nature.jpg" alt="Landsväg">
+                <img class="md:rounded-xl" src="/images/svartso-nature.jpg" alt="Landsväg">
             </div>
         </div>
     </section>

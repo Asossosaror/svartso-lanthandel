@@ -693,35 +693,11 @@ footer a.nav-a-tag:hover {
   color: rgb(30 41 59 / var(--tw-text-opacity));
 }
 
-section:has(#hero-img-1-home) {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-@media (min-width: 640px) {
-  section:has(#hero-img-1-home) {
-    padding-left: 1.75rem;
-    padding-right: 1.75rem;
-  }
-}
-
 #hero-img-1-home {
   height: 20rem;
   background-image: url('../images/hero-home.jpg');
   background-position: center;
   background-size: cover;
-}
-
-section:has(#hero-img-1-harbor) {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-@media (min-width: 640px) {
-  section:has(#hero-img-1-harbor) {
-    padding-left: 1.75rem;
-    padding-right: 1.75rem;
-  }
 }
 
 #hero-img-1-harbor {
@@ -731,13 +707,13 @@ section:has(#hero-img-1-harbor) {
   background-size: cover;
 }
 
-section:has(#bikes-hero-img) {
+.hero-section {
   padding-left: 0px;
   padding-right: 0px;
 }
 
 @media (min-width: 640px) {
-  section:has(#bikes-hero-img) {
+  .hero-section {
     padding-left: 1.75rem;
     padding-right: 1.75rem;
   }
@@ -968,7 +944,7 @@ section:has(#bikes-hero-img) {
   }
 }
 
-@media (width >= 1536px) {
+@media (width >= 1400px) {
   main {
     width: 1400px;
   }
@@ -1229,10 +1205,6 @@ section:has(#bikes-hero-img) {
   align-content: center;
 }
 
-.items-end {
-  align-items: flex-end;
-}
-
 .items-center {
   align-items: center;
 }
@@ -1259,10 +1231,6 @@ section:has(#bikes-hero-img) {
 
 .gap-24 {
   gap: 6rem;
-}
-
-.gap-28 {
-  gap: 7rem;
 }
 
 .gap-4 {
@@ -1413,10 +1381,6 @@ section:has(#bikes-hero-img) {
   text-align: center;
 }
 
-.text-right {
-  text-align: right;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1434,11 +1398,6 @@ section:has(#bikes-hero-img) {
 
 .text-5xl {
   font-size: 3rem;
-  line-height: 1;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
   line-height: 1;
 }
 
@@ -1481,6 +1440,20 @@ section:has(#bikes-hero-img) {
 .text-slate-950 {
   --tw-text-opacity: 1;
   color: rgb(2 6 23 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .lg\:btn-white {
+    --tw-border-opacity: 1;
+    border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  }
+
+  .lg\:btn-white:hover {
+    --tw-border-opacity: 1;
+    border-color: rgb(241 245 249 / var(--tw-border-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1555,12 +1528,29 @@ section:has(#bikes-hero-img) {
     flex-direction: row;
   }
 
+  .md\:items-end {
+    align-items: flex-end;
+  }
+
   .md\:justify-center {
     justify-content: center;
   }
 
   .md\:gap-12 {
     gap: 3rem;
+  }
+
+  .md\:rounded-xl {
+    border-radius: 0.75rem;
+  }
+
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .md\:text-right {
+    text-align: right;
   }
 }
 
@@ -1579,6 +1569,10 @@ section:has(#bikes-hero-img) {
 
   .lg\:flex-row {
     flex-direction: row;
+  }
+
+  .lg\:items-baseline {
+    align-items: baseline;
   }
 
   .lg\:justify-center {
@@ -1641,28 +1635,12 @@ section:has(#bikes-hero-img) {
     width: fit-content;
   }
 
-  .xl\:basis-1\/2 {
-    flex-basis: 50%;
-  }
-
-  .xl\:flex-row {
-    flex-direction: row;
-  }
-
-  .xl\:justify-center {
-    justify-content: center;
-  }
-
-  .xl\:gap-12 {
-    gap: 3rem;
+  .xl\:gap-24 {
+    gap: 6rem;
   }
 
   .xl\:self-center {
     align-self: center;
-  }
-
-  .xl\:rounded-xl {
-    border-radius: 0.75rem;
   }
 
   .xl\:bg-transparent {
