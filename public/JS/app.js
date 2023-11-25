@@ -121,6 +121,8 @@ function scrollIntoViewport(id) {
 function toggleNavbar() {
     const navbar = document.querySelector('.navbar-links');
     const overlay = document.querySelector('.overlay');
+    const burgerMenu = document.querySelector('.burger');
     navbar.classList.toggle('active');
     overlay.classList.toggle('show');
+    burgerMenu.classList.toggle('selected');
 }

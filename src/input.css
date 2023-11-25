@@ -14,6 +14,7 @@
 
     body {
         overflow-x: hidden;
+        width: 100%;
     }
 
     main {
@@ -35,11 +36,11 @@
     }
 
     .btn-blue {
-        @apply bg-blue-600 border-blue-600 text-white hover:bg-blue-500 hover:border-blue-500;
+        @apply bg-blue-600 border-blue-600 text-white hover:bg-blue-500 hover:border-blue-500 active:bg-blue-500 active:border-blue-500;
     }
     
     .btn-dark-blue {
-        @apply bg-blue-700 border-blue-700 text-white hover:bg-blue-600 hover:border-blue-600;
+        @apply bg-blue-700 border-blue-700 text-white hover:bg-blue-600 hover:border-blue-600 active:bg-blue-600 active:border-blue-600;
     }
 
     .btn-white {
@@ -51,7 +52,7 @@
     }
 
     .btn-sm {
-        @apply px-3 py-1;
+        @apply px-4 py-2;
     }
 
     p.semibold {
@@ -64,7 +65,7 @@
     }
 
     .navbar-links > a {
-        @apply sm:relative px-1 text-black text-2xl;
+        @apply sm:static xl:relative px-1 text-black text-2xl;
     }
 
     /* Burger icon */
@@ -73,7 +74,7 @@
         height: 55px;
         border-radius: 10px;
         background: white;
-        box-shadow: rgb(136 165 191 / 48%) 6px 2px 16px 0px, rgb(255 255 255 / 80%) -6px -2px 16px 0px;
+        box-shadow: rgb(136 165 191 / 48%) 6px 2px 16px 0px, rgb(255 255 255 / 80%) 0px 0px 20px 0px;
         cursor: pointer;
         position: fixed;
         top: 1rem;
@@ -86,7 +87,7 @@
         margin: 1em;
     }
 
-    .burger:hover {
+    .burger.selected {
         background: rgb(56 56 56);
     }
 
@@ -103,7 +104,7 @@
         width: 40px;
     }
 
-    .burger:hover .strip div {
+    .burger.selected .strip div {
         background: white;
     }
 
@@ -115,15 +116,15 @@
         width: 28px;
     }
 
-    .burger:hover .burger-strip div:first-child {
+    .burger.selected .burger-strip div:first-child {
         transform: rotate(45deg) translateY(1px) translateX(5px);
     }
 
-    .burger:hover .burger-strip div:nth-child(2) {
+    .burger.selected .burger-strip div:nth-child(2) {
         transform: rotate(-45deg);
     }
 
-    .burger:hover .burger-strip div:last-child {
+    .burger.selected .burger-strip div:last-child {
         transform: rotate(45deg) translateY(-13px) translateX(2px);
     }
 
@@ -146,6 +147,7 @@
         top: 0;
         width: 100vw;
         height: 100vh;
+        pointer-events: none;
         transition: opacity 250ms ease;
     }
 
@@ -280,11 +282,15 @@
         .slide img {
             height: 400px;
         }
+
+        .btn-sm {
+            @apply px-3 py-1;
+        }
     }
 
-    @media (width >= 1440px) {
+    @media (width >= 1280px) {
         main {
-            width: 1400px;
+            width: 100%;
             padding-bottom: 200px;
             margin: 0 auto;
         }
@@ -299,6 +305,12 @@
 
         .navbar-links {
             transform: translateX(0);
+        }
+    }
+
+    @media (width >= 1536px) {
+        main {
+            width: 1400px;
         }
     }
 }

@@ -1,7 +1,7 @@
 <%- include('partials/head') %>
 <main>
-    <section class="flex flex-col justify-center h-30r">
-        <h1 class="text-7xl text-slate-950 text-center p-6 font-bold">Land i sikte!</h1>
+    <section class="flex flex-col justify-center lg:h-96 xl:h-30r">
+        <h1 class="text-5xl font-semibold sm:text-6xl xl:text-7xl text-slate-950 text-center xl:p-6 xl:font-bold">Land i sikte!</h1>
     </section>
     <section>
         <div>
@@ -13,7 +13,7 @@
         <p class="max-w-5xl text-center text-xl font-semibold pb-8 leading-loose">Välkommen att lägga till vid vår nya gästhamn. Hamnen drivs av oss i Svartsö Lanthandel och ligger i anslutning till både butiken och vårt fina café.</p>
     </section>
     <section class="flex justify-center">
-        <div class="flex justify-center gap-12">
+        <div class="flex flex-col md:flex-row justify-center gap-12">
             <div class="w-fit h-fit p-8 border-slate-200 border-2 rounded-lg">
                 <div class="w-64 h-28">
                     <h3 class="text-3xl pb-2">Hamnplats</h3>
@@ -29,16 +29,16 @@
             </div>
         </div>
     </section>
-    <section class="flex flex-col items-center">
+    <section class="flex flex-col items-center px-1">
         <h3 class="text-4xl font-semibold text-center pb-10">Faciliteter</h3>
         <p class="text-xl leading-loose font-semibold text-center max-w-[80%]">I hamnen finns ett servicehus innehållandes toalett & dusch som alla hamngäster är välkomna att använda. Vill ni övernatta finns det möjlighet att boka våra sjöbodar som ligger i hamnen.</p>
         <a href="/sjobodarna"><button class="btn-blue mt-10">Boka sjöbod</button></a>
     </section>
     <section class="flex flex-col items-center">
         <h2 class="text-4xl text-center font-semibold pb-12">Skicka din bokningsförfrågan</h2>
-        <div class="flex justify-center gap-12">
-            <div class="w-fit h-auto p-8 border-slate-200 border-2 rounded-lg">
-                <div class="w-96">
+        <div class="flex flex-col sm:w-auto lg:flex-row lg:justify-center gap-16 lg:gap-12">
+            <div class="w-full h-auto sm:p-8 sm:border-slate-200 sm:border-2 sm:rounded-lg">
+                <div class="w-full sm:w-96">
                     <p class="text-lg pb-5">Vill du komma i kontakt med oss eller har frågor om Gästhamnen går det bra att höra av sig till via email eller telefon.</p>
                     <div class="pb-3">
                         <p class="semibold">Tel: </p>
@@ -58,9 +58,9 @@
                     </div>
                 </div>
             </div>
-            <div class="w-fit h-fit p-8 border-slate-200 border-2 rounded-lg">
+            <div class="w-full h-auto sm:p-8 sm:border-slate-200 sm:border-2 sm:rounded-lg">
                 <form action="/send-email" method="post" class="contact-form">
-                    <div class="w-96">
+                    <div class="w-full sm:w-96">
                         <div>
                             <label for="name-input" class="form-label">Namn</label>
                             <div class="form-input-container">
